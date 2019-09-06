@@ -1,17 +1,18 @@
 extends ../_template
 
 block variables
-  - var title       = 'Odinokun`s start template'
-  - var description = 'Odinokun`s start template'
-  - var ogtitle     = 'Odinokun`s start template'
-  - var ogimage     = 'assets/img/social.jpg'
+  - var title       = 'Аккурат Сервис'
+  - var description = 'Аккурат Сервис'
+  - var ogtitle     = 'Аккурат Сервис'
 
 block content
-  .main-wrap.no-js.index
+  .main-wrap
     include ../sections/header
 
     //begin content
-    section.main
+    .main
+      include ../sections/menu
+      include ../sections/top
     //end content
 
     include ../sections/footer

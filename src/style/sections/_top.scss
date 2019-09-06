@@ -1,0 +1,36 @@
+.top {
+  background-image: url('../img/bg-top.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  @include max(767) {
+    background-position: 60% 50%;
+  }
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 420px;
+  }
+}
+
+.top__title {
+  color: #3d3d3d;
+  font-family: $font-title;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  @include max(767) {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+.top__subtitle {
+  @include max(767) {
+    font-size: 20px;
+  }
+  color: #3d3d3d;
+  font-family: $font-medium;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
