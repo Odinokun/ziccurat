@@ -1,22 +1,25 @@
-.menu-section{
+.menu-section {
   background-color: #388cd1;
-  .container{
+  .container {
     display: flex;
   }
 }
 
-.menu__list{
+.menu__list {
   margin: 0;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0;
   display: flex;
   align-items: center;
   min-height: 54px;
 }
-.menu__item{
-  padding: 0;list-style: none;
+
+.menu__item {
+  padding: 0;
+  list-style: none;
 }
-.menu__link{
+
+.menu__link {
   white-space: nowrap;
   text-decoration: none;
   color: #fff;

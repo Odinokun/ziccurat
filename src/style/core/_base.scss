@@ -186,13 +186,46 @@ ol > *:not(li) {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 40px;
+  padding: 0 40px;
 
   @include max(767) {
-    padding: 0px 20px;
+    padding: 0 20px;
   }
 
   @include max(425) {
     padding: 0 10px;
+  }
+}
+
+.title {
+  text-align: center;
+  color: #3d3d3d;
+  font-family: $font-title;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 160px;
+    height: 1px;
+    background-color: #dbe6f1;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 3px;
+    box-shadow: 0 8px 26px rgba(115, 175, 228, 0.27);
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #3d90d3 0%, #2d85cf 100%);
   }
 }

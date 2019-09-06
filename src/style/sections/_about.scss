@@ -1,0 +1,19 @@
+.about {
+  .container {
+    padding-top: 45px;
+    max-width: 1000px;
+    padding-bottom: 15px;
+    .title {
+      margin-bottom: 30px;
+    }
+    p {
+      color: #3d3d3d;
+      font-family: $font;
+      display: inline-block;
+      margin: 0 0 22px 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
