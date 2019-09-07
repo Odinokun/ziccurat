@@ -1,0 +1,76 @@
+.order {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include max(1020) {
+    background-position: 40% 50%;
+  }
+  @include max(650) {
+    background-position: 100% 50%;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-order__btn {
+    background-image: linear-gradient(to top, #ff7953 0%, #fb8c62 100%);
+  }
+}
+
+.order--first {
+  background-image: url('../img/bg-order-01.jpg');
+  .order__title,
+  .order__subtitle {
+    color: #fff;
+  }
+}
+
+.order--second {
+  background-image: url('../img/bg-order-02.jpg');
+  .order__title,
+  .order__subtitle {
+    color: #3d3d3d;
+  }
+}
+
+.order__item {
+  width: 100%;
+  max-width: 550px;
+  padding: 60px 0;
+
+  @include max(1090) {
+    max-width: 500px;
+  }
+  @include max(1020) {
+    max-width: 300px;
+  }
+  @include max(650) {
+    max-width: 100%;
+  }
+}
+
+.order__title {
+  font-family: $font-title;
+  font-size: 48px;
+  line-height: 60px;
+  max-width: 400px;
+  margin-bottom: 0;
+
+  @include max(1020) {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+}
+
+.order__subtitle {
+  font-family: $font;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+
+  @include max(1020) {
+    font-size: 20px;
+  }
+}
