@@ -1,4 +1,18 @@
 //begin footer
-footer.footer(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 footer
+footer.footer
+  .container
+    .footer__contacts
+      a(href="mailto:info@ac-uborka.ru").footer__contact
+        +svg('email')
+        span info@ac-uborka.ru
+      a(href="https://goo.gl/maps/K19btqHeTTHwePW99" target="_blank" rel="nofollow noopener noreferrer").footer__contact
+        +svg('adress')
+        span ул. Манчестерская, д. 12
+      a(href="tel:+78126405110").footer__contact.footer__contact--phone
+        +svg('phone')
+        span +7 (812) 640-51-10
+
+
+
+    .footer__copyright © 2009 - 2019  Клининговые услуги компании «Аккурат-Сервис»: профессиональная уборка в Санкт-Петербурге
 //end footer
