@@ -1,0 +1,121 @@
+.we-use {
+  .container {
+    padding-top: 38px;
+    padding-bottom: 20px;
+  }
+  .title {
+    margin-bottom: 45px;
+  }
+}
+
+.we-use__row {
+  display: flex;
+  padding-bottom: 25px;
+
+  @include max(1150) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.we-use__item {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 27px;
+  span {
+    font-family: $font;
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #3d3d3d;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.we-use__title {
+  font-family: $font-title;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  position: relative;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  color: #3d3d3d;
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 1px;
+    content: '';
+    background-color: #dbe6f1;
+  }
+}
+
+.we-use__card {
+  display: flex;
+  flex: none;
+  width: 255px;
+  min-height: 331px;
+  margin-bottom: 20px;
+  margin-left: 34px;
+  cursor: pointer;
+  border-radius: 24px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: 0 8px 26px rgba(115, 175, 228, .23);
+
+  @include max(1150) {
+    flex: inherit;
+    width: calc(33.33% - 23px);
+    max-width: 255px;
+    margin-right: 34px;
+    margin-left: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include max(650) {
+    width: calc(50% - 23px);
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  @include max(550) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @include max(375) {
+    max-width: 100%;
+  }
+  &:hover {
+    .we-use__text {
+      opacity: 1;
+    }
+  }
+}
+
+.we-use__text {
+  width: 100%;
+  min-height: 331px;
+  padding: 45px 30px;
+  transition: opacity .5s;
+  opacity: 0;
+  border-radius: 24px;
+  background-color: #438fd0;
+  span {
+    font-family: $font;
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
