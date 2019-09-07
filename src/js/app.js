@@ -7,7 +7,7 @@ $(function() {
   require('./modules/maskedinput')();
 
   // begin Slick slider
-  // require('./modules/slick')();
+  require('./modules/slick')();
 
   // begin Popup
   // require('./modules/popup')();

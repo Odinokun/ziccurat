@@ -12,6 +12,7 @@
 .advantages-2__item {
   display: flex;
   margin-bottom: 35px;
+
   @include max(860) {
     flex-direction: column;
   }
@@ -21,8 +22,8 @@
   flex: none;
   width: 380px;
   margin-right: 60px;
-  @include max(550) {
 
+  @include max(550) {
     margin-right: 0;
   }
   @include max(425) {
@@ -64,6 +65,7 @@
     height: 1px;
     content: '';
     background-color: #dbe6f1;
+
     @include max(860) {
       left: 0;
     }
