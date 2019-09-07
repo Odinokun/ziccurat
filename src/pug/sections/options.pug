@@ -1,0 +1,26 @@
+mixin options__item(pic, title, price)
+  .options__item
+    div(class="options__pic" style='background-image:url("assets/img/option-' + pic + '.jpg")')
+      a(href="#") подробнее
+    .options__info
+      h3.options__title #{title}
+      span.options__text В штате компании работают профессионалы, которые одинаково хорошо справятся с послестроительной уборкой и с очищением деликатных поверхностей.
+      .options__footer
+        a(href="#").options__btn Заказать уборку
+        .options__price
+          span.options__price-sm от
+          span.options__price-lg #{price}
+
+//begin options
+.options
+  .container
+    h2.title Варианты уборки
+  .options-list
+    .container
+      +options__item('01', 'Поддерживающая уборка', '1700р.')
+      +options__item('02', 'Генеральная уборка', '2500р.')
+      +options__item('03', 'Послестроительная уборка', '3200р.')
+      +options__item('01', 'Поддерживающая уборка', '1700р.')
+      +options__item('02', 'Генеральная уборка', '2500р.')
+      +options__item('03', 'Послестроительная уборка', '3200р.')
+//end options
