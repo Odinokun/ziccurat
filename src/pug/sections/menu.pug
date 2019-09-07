@@ -1,14 +1,46 @@
-//begin menu
+//begin menu-section
 .menu-section
   .container
-    nav.menu
+
+    //begin menu
+    nav.menu#menu
       ul.menu__list
-        li.menu__item
+        li.menu__item.menu__item--parent.active
+          .menu__item-svg
+            +svg('plus')
           a(href="#").menu__link Уборка коммерческих помещений
-        li.menu__item
+          ul.menu__sublist
+            li.menu__subitem
+              a(href="#").menu__sublink Офисы
+            li.menu__subitem
+              a(href="#").menu__sublink Бизнес-центры
+            li.menu__subitem
+              a(href="#").menu__sublink Торговые центры
+        li.menu__item.menu__item--parent
+          .menu__item-svg
+            +svg('plus')
           a(href="#").menu__link Уборка промышленных помещений
+          ul.menu__sublist
+            li.menu__subitem
+              a(href="#").menu__sublink Офисы
+            li.menu__subitem
+              a(href="#").menu__sublink Бизнес-центры
+            li.menu__subitem
+              a(href="#").menu__sublink Торговые центры
         li.menu__item
           a(href="#").menu__link Услуги для ТСЖ и УК
-        li.menu__item
+        li.menu__item.menu__item--parent
+          .menu__item-svg
+            +svg('plus')
           a(href="#").menu__link Уборка квартир и домов
-//end menu
+          ul.menu__sublist
+            li.menu__subitem
+              a(href="#").menu__sublink Офисы
+            li.menu__subitem
+              a(href="#").menu__sublink Бизнес-центры
+            li.menu__subitem
+              a(href="#").menu__sublink Торговые центры
+    //end menu
+
+    include ../elements/burger
+//end menu-section

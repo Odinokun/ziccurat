@@ -3,4 +3,27 @@ header.header
   .container
     a(href="#").header__logo
       img(src="assets/img/logo.jpg" alt="logo")
+
+    //begin header__contacts
+    .header__contacts#header__contacts
+      .header__contacts-close
+        +svg('close')
+
+      a(href="mailto:info@ac-uborka.ru").footer__contact
+        +svg('email')
+        span info@ac-uborka.ru
+      a(href="https://goo.gl/maps/K19btqHeTTHwePW99" target="_blank" rel="nofollow noopener noreferrer").footer__contact
+        +svg('adress')
+        span ул. Манчестерская, д. 12
+      a(href="tel:+78126405110").footer__contact.footer__contact--phone
+        +svg('phone')
+        span +7 (812) 640-51-10
+    //end header__contacts
+
+    a(href="#").header-btn
+      +svg('operator')
+      span Заказать звонок
+
+    .info-btn
+      +svg('info')
 //end header

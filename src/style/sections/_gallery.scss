@@ -9,6 +9,11 @@
 .gallery__slider {
   width: calc(100% + 30px);
   margin-left: -15px;
+
+  @include max(425) {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
   .slick-prev {
     left: 30px;
   }

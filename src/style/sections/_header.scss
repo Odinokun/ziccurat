@@ -1,7 +1,118 @@
 .header {
   .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+
+    @include max(1090) {
+      flex-wrap: wrap;
+    }
+    @include max(650) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.header__logo {
+  //width: 100px;
+  margin-right: 10px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.header__contacts {
+  display: flex;
+
+  @include max(1090) {
+    justify-content: space-between;
+    order: 5;
+    width: 100%;
+  }
+  @include max(650) {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    transition: transform .5s;
+    transform: translateX(100%);
+    background-color: #fff;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  .footer__contact {
+    @include max(767) {
+      padding: 10px 5px;
+    }
+  }
+}
+
+.header__contacts-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+  @include max(650) {
+    display: block;
+  }
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 188px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  border-radius: 19px;
+  background-image: linear-gradient(to top, #ff7953 0%, #fb8c62 100%);
+  box-shadow: 0 4px 16px rgba(255, 125, 85, .27);
+  svg {
+    flex: none;
+    fill: #fff;
+    width: 19px;
+    height: 21px;
+    margin-right: 17px;
+  }
+  span {
+    font-family: $font-title;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 38px;
+    white-space: nowrap;
+    color: #fff;
+  }
+}
+
+.info-btn {
+  display: none;
+  margin-left: 10px;
+
+  @include max(650) {
+    display: block;
+  }
+  svg {
+    fill: #5d8dcf;
+    width: 38px;
+    height: 38px;
   }
 }

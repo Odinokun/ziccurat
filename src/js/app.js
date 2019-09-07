@@ -6,6 +6,12 @@ $(function() {
   // begin phone mask
   require('./modules/maskedinput')();
 
+  // begin contacts
+  require('./modules/contacts')();
+
+  // begin menu
+  require('./modules/menu')();
+
   // begin Slick slider
   require('./modules/slick')();
 
