@@ -4,31 +4,31 @@
 }
 
 .form-order__input {
-  height: 38px;
-  border-radius: 19px !important;
-  background-color: #ffffff;
-  border: none;
-  color: #5b5b5b;
   font-family: $font;
   font-size: 18px;
   font-weight: 400;
-  padding: 0 35px;
-  margin-bottom: 20px;
+  height: 38px;
   margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0 35px;
+  color: #5b5b5b;
+  border: none;
+  border-radius: 19px !important;
+  background-color: #fff;
 }
 
 .form-order__btn {
-  margin-bottom: 20px;
-  border: none;
-  height: 38px;
-  cursor: pointer;
-  padding: 0 25px;
-  box-shadow: 0 8px 26px rgba(115, 175, 228, 0.27);
-  border-radius: 19px !important;
-  background-image: linear-gradient(to top, #3d90d3 0%, #2d85cf 100%);
-  color: #ffffff;
   font-family: $font;
   font-size: 17px;
   font-weight: 500;
   line-height: 1;
+  height: 38px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 19px !important;
+  background-image: linear-gradient(to top, #3d90d3 0%, #2d85cf 100%);
+  box-shadow: 0 8px 26px rgba(115, 175, 228, .27);
 }

@@ -168,10 +168,10 @@ ol > *:not(li) {
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
-
   //свойство для плавной прокрутки на яблоках
 
   -webkit-overflow-scrolling: touch;
+
   &.no-scroll {
     overflow: hidden;
   }
@@ -191,42 +191,41 @@ ol > *:not(li) {
   @include max(767) {
     padding: 0 20px;
   }
-
   @include max(425) {
     padding: 0 10px;
   }
 }
 
 .title {
-  text-align: center;
-  color: #3d3d3d;
   font-family: $font-title;
   font-size: 36px;
   position: relative;
-  padding-bottom: 10px;
   margin-bottom: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #3d3d3d;
   &::before {
-    content: '';
     position: absolute;
-    left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    left: 0;
     width: 160px;
     height: 1px;
+    margin: auto;
+    content: '';
     background-color: #dbe6f1;
   }
-  &::after{
-    content: '';
+  &::after {
     position: absolute;
-    left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    left: 0;
     width: 100px;
     height: 3px;
-    box-shadow: 0 8px 26px rgba(115, 175, 228, 0.27);
+    margin: auto;
+    content: '';
     border-radius: 2px;
     background-image: linear-gradient(to top, #3d90d3 0%, #2d85cf 100%);
+    box-shadow: 0 8px 26px rgba(115, 175, 228, .27);
   }
 }
