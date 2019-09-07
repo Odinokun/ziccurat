@@ -1,0 +1,23 @@
+mixin advantages__item(title)
+  .advantages__item
+    .advantages__icon
+      img(src="assets/img/star.svg" alt="icon")
+    .advantages__info
+      h3.advantages__title #{title}
+      span.advantages__text В штате компании работают профессионалы, которые одинаково хорошо справятся с послестроительной уборкой и с очищением поверхностей.
+
+
+//begin advantages
+.advantages
+  .container
+    h2.title Преимущества
+  //begin advantages__list
+  .advantages__list
+    .container
+      +advantages__item('Преимущество 1')
+      +advantages__item('Преимущество 2')
+      +advantages__item('Преимущество 3')
+      +advantages__item('Преимущество 4')
+
+  //end advantages__list
+//end advantages
