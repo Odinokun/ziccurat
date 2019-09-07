@@ -16,7 +16,6 @@
 }
 
 .header__logo {
-  //width: 100px;
   margin-right: 10px;
   img {
     display: block;
@@ -37,16 +36,18 @@
     z-index: 10;
     top: 0;
     left: 0;
+    overflow: hidden;
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 0;
     height: 100vh;
     padding-top: 80px;
-    transition: transform .5s;
-    transform: translateX(100%);
+    transition: .5s;
+    transform: translateX(160vw);
     background-color: #fff;
     &.active {
+      width: 100%;
       transform: translateX(0);
     }
   }
