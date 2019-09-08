@@ -1,17 +1,32 @@
-//begin popup
 .popup__layer
+
+//begin popup
 .popup
   .popup__close
     +svg('close')
   .popup__header
-    h2.popup__title Write Review
+    h2.popup__title Заполните форму, и мы перезвоним через 10 минут!
   .popup__body
     // begin schedule-item__form
     form.popup__form
-        input(name='name' placeholder='Your Name').popup__form-input.input
-        input(name='email' placeholder='Email').popup__form-input.input
-        textarea(placeholder='Your review').popup__form-textarea.textarea
-        .popup__form-submit.btn
-          input(type='submit' value='send')
+      input(placeholder='Ваше имя').form-order__input
+      input(placeholder='+7 ( _ _ _ ) _ _ _ - _ _ - _ _').form-order__input.phone-mask
+      .form-order__btn.order__success
+        span Отправить
+        input(type='submit')
     // begin schedule-item__form
 //end popup
+
+//begin popup-success
+.popup-success
+  .popup__close
+    +svg('close')
+  .popup__header
+    h2.popup__title
+      |Заявка отправлена.
+      br
+      |Мы скоро свяжемся в свами!
+  .popup__body
+      .form-order__btn.order__close
+        span Ок
+//end popup-success

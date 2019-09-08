@@ -14,7 +14,12 @@
     justify-content: flex-end;
   }
   .form-order__btn {
-    background-image: linear-gradient(to top, #ff7953 0%, #fb8c62 100%);
+    &::before {
+      background-image: linear-gradient(to top, #ff7953 0%, #fb8c62 100%);
+    }
+    &::after {
+      background-image: linear-gradient(to top, #fa6236 0%, #fb7847 100%);
+    }
   }
 }
 
